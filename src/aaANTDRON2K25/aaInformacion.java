@@ -15,15 +15,35 @@ public class aaInformacion {
         this.aaCedula = aaCedula;
     }
 
+
     public void aaMostrarInformacion() {
         System.out.println("Nombre: " + aaNombre);
         System.out.println("Cédula: " + aaCedula);
     }
+    public void leerCSV() {
+    InputStream is = getClass().getClassLoader().getResourceAsStream("AlomotoAriana.csv");
+
+    if (is == null) {
+        System.out.println("No se encontró el archivo.");
+        return;
+    }
+
+    try (BufferedReader br = new BufferedReader(new InputStreamReader(is))) {
+        String linea;
+        while ((linea = br.readLine()) != null) {
+            System.out.println(linea);
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+
 
     public void aaDatosCoordenadas(){
         System.out.println("Cargando coordenadas");
         try {
-            BufferedReader aaLector = new BufferedReader(new FileReader("AlomotoAriana.csv"));
+            InputStream is = getClass().getClassLoader().getResourceAsStream("AlomotoAriana.csv");
+            BufferedReader aaLector = new BufferedReader(new InputStreamReader(is));
             String aaLinea;
             boolean aaPrimeraLinea = true;
             int aaLineasCargadas = 0;
