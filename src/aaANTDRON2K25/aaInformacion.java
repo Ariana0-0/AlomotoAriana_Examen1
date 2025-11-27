@@ -10,7 +10,10 @@ public class aaInformacion {
     private int aaCedula;
     private List<Coordenada> aaCoordenadas = new ArrayList<>();
 
-
+    public aaInformacion(String aaNombre, int aaCedula) {
+        this.aaNombre = aaNombre;
+        this.aaCedula = aaCedula;
+    }
 
     public void aaMostrarInformacion() {
         System.out.println("Nombre: " + aaNombre);
@@ -55,16 +58,17 @@ public class aaInformacion {
 
     }
 
-    public aaInformacion(String aaNombre, int aaCedula) {
-        this.aaNombre = aaNombre;
-        this.aaCedula = aaCedula;
-    }
+
 
     public String getAaNombre() {
         return aaNombre;
     }
     public int getAaCedula() {
         return aaCedula;
+    }
+
+    public List<Coordenada> getAaCoordenadas() {
+        return aaCoordenadas;
     }
 
     
