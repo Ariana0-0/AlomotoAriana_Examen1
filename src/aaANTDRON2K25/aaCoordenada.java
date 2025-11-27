@@ -1,6 +1,5 @@
 package aaANTDRON2K25;
-
-
+//Refactorización se creo toda esta nueva clase
 
 class aaCoordenada {
     private String aaGeoposicion;
@@ -22,7 +21,7 @@ class aaCoordenada {
         this.aaViernes = aaViernes;
         this.aaTipoArsenal = aaTipoArsenal;
     }
-    public String getAaGeoposocion() {
+    public String getAaGeoposicion() {
         return aaGeoposicion;
     
     }

@@ -2,7 +2,7 @@ package aaANTDRON2K25;
 
 public class aaAutomata {
 
-    public boolean aaAceptar(String aaCadena) {
+    public boolean aaTipoAutomata(String aaCadena) {
         if (aaCadena == null || aaCadena.isEmpty()) return false;
 
         int i = 0;

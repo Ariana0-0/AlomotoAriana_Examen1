@@ -5,7 +5,7 @@ public class aaAntCiberDron implements IIA {
     @Override
     public boolean aaBuscar(String aaTipoArsenal) {
         aaAutomata aaA = new aaAutomata();
-        return aaA.aaAceptar(aaTipoArsenal);
+        return aaA.aaTipoAutomata(aaTipoArsenal);
     }
     
 }

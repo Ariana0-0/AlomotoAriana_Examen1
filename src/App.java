@@ -11,12 +11,12 @@ public class App {
         controller.aainiciarSistema();
         controller.aaMostrarCSV(); 
         controller.aaDatosCoordenadas();
-
+        aaHZangano zangano = new aaHZangano();
+        aaOmnivoro alimento = new aaOmnivoro();
+        zangano.aaCrear();
+        zangano.aaComer(alimento);
         aaBomba sistema = new aaBomba();
         sistema.ejecutar(controller.getAaCoordenadas());
 
-        aaHZangano zangano = new aaHZangano();
-        aaOmnivoro alimento = new aaOmnivoro();
-        zangano.aaComer(alimento);
     }
 }

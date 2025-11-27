@@ -24,7 +24,7 @@ public class aaController {
             if (j == 3) j = 0;
             System.out.print( spin[j] + "  " + i + "%\r");
             j++;
-            Thread.sleep(20);
+            Thread.sleep(10);
         }
         System.out.println( "");
     }
