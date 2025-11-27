@@ -1,15 +1,22 @@
 import aaANTDRON2K25.*;
+import aaANTDRON2K25.aaComida.aaOmnivoro;
+
+
 public class App {
 
     public static void main(String[] args) {
 
-        aaInformacion info = new aaInformacion("AlomotoAriana", 1726965542);
+        aaController controller = new aaController();
 
-        info.aaMostrarInformacion();
-        info.leerCSV(); 
-        info.aaDatosCoordenadas();
+        controller.aainiciarSistema();
+        controller.aaMostrarCSV(); 
+        controller.aaDatosCoordenadas();
 
         aaBomba sistema = new aaBomba();
-        sistema.ejecutar(info);
+        sistema.ejecutar(controller.getAaCoordenadas());
+
+        aaHZangano zangano = new aaHZangano();
+        aaOmnivoro alimento = new aaOmnivoro();
+        zangano.aaComer(alimento);
     }
 }

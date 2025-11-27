@@ -1,6 +1,8 @@
 package aaANTDRON2K25;
 
-class Coordenada {
+
+
+class aaCoordenada {
     private String aaGeoposicion;
     private String aaLunes;
     private String aaMarteS;
@@ -10,7 +12,8 @@ class Coordenada {
     private String aaTipoArsenal;
 
 
-    public Coordenada(String aaGeoposicion, String aaLunes, String aaMarteS, String aaMiercoles, String aaJueves, String aaViernes, String aaTipoArsenal) {
+
+    public aaCoordenada(String aaGeoposicion, String aaLunes, String aaMarteS, String aaMiercoles, String aaJueves, String aaViernes, String aaTipoArsenal) {
         this.aaGeoposicion = aaGeoposicion;
         this.aaLunes = aaLunes;
         this.aaMarteS = aaMarteS;
@@ -41,5 +44,7 @@ class Coordenada {
     public String getAaTipoArsenal() {
         return aaTipoArsenal;
     }
+
+
 
 }
