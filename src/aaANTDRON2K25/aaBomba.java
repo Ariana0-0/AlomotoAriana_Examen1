@@ -7,11 +7,10 @@ public class aaBomba {
 
         aaAntCiberDron dron = new aaAntCiberDron();
         System.out.println("\n Inicializando AntCiberDron ");
-
+        System.out.println("Arsenal  |  Tipo Arsenal  | Acción ");
         for (aaCoordenada c : aaLista) {
             String coordenada = c.getAaGeoposicion();
             String arsenal = c.getAaTipoArsenal();
-            System.out.println("Arsenal  |  Tipo Arsenal  | Acción ");
             if (dron.aaBuscar(arsenal)) {
                 System.out.println( coordenada + " | " + arsenal + "          | DESTRUIDO");
             } else {
